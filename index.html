@@ -2,34 +2,72 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Kintrishi</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="icon" href="./img/river.png">
+        <title>Kintrishi club</title>
     </head>
     <body>
-
-        <header>
-            <h1><a href="/about">Kintrishi</a></h1>
-        </header>
+        <nav class="nav">
+          <div class="logo-container"><img class="logo" src="./img/river.png" alt=""></div>
+            <div>
+            <ul class="navbar">
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#national-park">Protected Area</a></li>
+              <li><a href="#fauna">Fauna</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+       
        <section class="banner">
         <img src="/img/river.jpg" alt="Kintrishi club welcome banner">
         <div class="welcome">
-            <h2>Welcome to club
+            <h2>Welcome to the club
                 <br>
                 <span>Kintrishi</span>
             </h2>
         </div>
-        <nav>
-            <ul>
-                <li><a class="about" href="/about.html">About</a></li>
-                <li><a href="/history.html">History</a></li>
-                <li><a href="/pa.html">Protected Areas</a></li>
-                <li><a href="/contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-        <main>
-            <article>
-                <h2>Kintrishi river basin</h2>
-                <p>The Kintrishi (Georgian: კინტრიში) is a river in the Autonomous Republic of Adjara in southwestern Georgia. The Kintrishi rises in the Meskheti Range near Mount Khino, at an elevation of 2,599 metres (8,527 ft) above sea level. It flows through the municipality Kobuleti. It flows initially in a westerly direction through the mountains. North of the river is the Kintrishi National Park, south of the Mtirala National Park. The Kintrishi passes the village of Chino and takes on the left tributary of Cherkena. The river then turns north and cuts through a mountain range. Later it turns west again. In the coastal plain it still takes on the Kinkischa on the left side and finally reached on the southern outskirts of Kobuleti by a spit almost completely separated from the Black Sea estuary, in which also flows from the southeast inflowing Dechwa. The Kintrishi has a length of 45 km (28 mi). It drains an area of 291 km2 (112 sq mi).</p>
-            </article>
+        
+        <div id="about"></div>
+        <main id="about">
+          <section class="toggle-tabs">
+            <div class="title">
+              <h2>About</h2>
+            </div>
+            <div class="about-center section-center">
+              <article class="tab-img">
+                <img src="./img/bridge-kintrishi.jpg" alt="">
+              </article>
+              <div class="wrapper">
+                <article class="description">
+                  <!-- button container -->
+                  <div class="btn-container">
+                    <button class="tab-btn active" data-id="project">Project</button>
+                    <button class="tab-btn" data-id="location">Location</button>
+                    <button class="tab-btn" data-id="history">History</button>
+                  </div>
+                  <article class="project-content">
+                    <div class="content active" id="project">
+                      <p>Kintrishi club project is a dedicated website for all people who enjoy the beauty of local rivers and in particular - Kintrishi river. The love for your ancestral homeland starts with adoration of its nature. The environment, in which people live in, shape the state of happiness and satisfaction from life. The smallest peculiarities of our day to day scenery are inprinted in our mind and I believe are one of the few fings that makes all people unique. Neighbours can live for generations in the same village but do we really know what happens beside the next gorge or within a mile from our house? Do we care enough about our habitat and preservation of its beauty?</p>
+                    </div>
+                    <div class="content block" id="location">
+                      <p>Kintrishi (Georgian: კინტრიში) is a river in the Adjara region in southwestern Georgia. The Kintrishi rises in the Meskheti Range near Mount Khino, at an elevation of 2,599 metres above sea level. The Kintrishi passes the village of Chino and takes on the left tributary of Cherkena. The river then turns north and cuts through a mountain range. Later it turns west again. In the coastal plain it still takes on the Kinkischa on the left side and finally reached on the southern outskirts of Kobuleti by a spit almost completely separated from the Black Sea estuary. The Kintrishi has a length of 45 km. It drains an area of 291 km2.</p>
+                    </div>
+                    <div class="content block" id="history">
+                      <p>Kintrishi gorge is a part of Colchian world.  The ancestors of the Kobuleti settlement still settled in the Stone Age, and they have a definite way of divine nature. The region is rich with stone bridges constructed during "The Golden Age" of Georgia, churches and ruins of ancient forts and castles</p>
+                    </div>
+                  </article>
+                </article>
+              </div>
+              
+              
+            </div>
+          </section>
+          <hr>
+          <br>
+          <br>
+            <h2 id="gallery">Gallery</h1>
             <ul class="images">
                 <li><img src="/img/river2.jpg"></li>
                 <li><img src="/img/river3.jpg"></li>
@@ -40,12 +78,111 @@
                 <li><img src="/img/bridge.jpg"></li>
                 <li><img src="/img/bridge2.jpg"></li>
             </ul>
+            <hr>
+            <br>
+            <br>
+
+            <article>
+                <h2 id="national-park">Kintrishi National Park</h2>
+                <img src="./img/kintrishi-map.png" alt="">
+                <div class="protected-area">
+                    <p>Kintrishi Protected Areas is located in Adjara Autonomous Republic (Kobuleti Municipality) with a total area of 13,893 ha. It is located in a picturesque valley of the river Kintrishi, between village Tskhemvani and Khino Mountains, at an altitude of 300-2,500 meters above sea level. Protected areas are bordered with Kobuleti forest administration from the north, Shuakhevi municipality area from the east, Qeda municipality from the south and Mtirala National Park from the south-west. Kintrishi Protected Areas Administration manages two different types of protected areas - State Nature Reserve and Protected Landscape. Kintrishi State Nature Reserve was established in 1959 and its purpose is to protect relict forest and endemic species, flora and fauna of Shuamta.</p>
+                    <p>Kintrishi Protected Areas along with Mtirala National Park and Machakhela National Park form a chain of protected area units established to conserve the Colchic forest of the region. However, each protected area has its own particularities that should be further enhanced and promoted. As part of the Euxine-Colchic deciduous forests ecoregion along an elevational gradient. Kintrishi Strict Nature Reserve contains a wide diversity of ecosystems, including lowland forests and montane meadows. Over 900 species of plants are found in the area, including the Common hornbeam, Oriental beech, and Caucasian fir.</p>
+                    <p>Kintrishi protected Areas cover two climatic zones: 1. humid climate with cold winter and long hot summer; 2. humid climate with cold snowy winter and short summer. The rugged surface of the complex relief of the protected areas of Kintrishi and deep gorges cause frequent changes of climatic elements. The inner mountainous part is characterized with quite warm summer. The lowest temperature on the reserve territory is in January, February and March. The warmest months are June, July and August. The average temperature in August is +24 degree, in January +4 degree. The average annual precipitation on the protected areas do not drop below 200 mm and grows with altitude and reaches 3,000 mm. 
+                </p>
+                </div>
+                
+            </article>
         </main>
-       </section>
+       </section class="fish">
+       <article>
+            <h2 id="fauna">Kintrishi river fauna</h2>
+       </article>
+
+       <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/fauna/Squalius orientalis.png" class="d-block w-100" alt="...">
+            <div class="fish-title carousel-caption d-none d-md-block">
+              <h5>1. Cyprinidae</h5>
+              <p>Squalius orientalis</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/fauna/Barbus escherichii.jpg" class="d-block w-100" alt="...">
+            <div class="fish-title carousel-caption d-none d-md-block">
+              <h5>2. Sakarya Barbel</h5>
+              <p>Barbus escherichii</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/fauna/Capoeta sieboldii.jpg" class="d-block w-100" alt="...">
+            <div class="fish-title carousel-caption d-none d-md-block">
+              <h5>3. Nipple-lip scraper</h5>
+              <p>Capoeta sieboldii</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/fauna/Salmo trutta.jpg" class="d-block w-100" alt="...">
+            <div class="fish-title carousel-caption d-none d-md-block">
+              <h5>4. Brown trout</h5>
+              <p>Salmo trutta</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/fauna/Alburnoides fasciatus.png" class="d-block w-100" alt="...">
+            <div class="fish-title carousel-caption d-none d-md-block">
+              <h5>5. Transcaucasian spirlin</h5>
+              <p>Alburnoides fasciatus</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/fauna/Neogobius Fluviatilis.jpg" class="d-block w-100" alt="...">
+            <div class="fish-title carousel-caption d-none d-md-block">
+              <h5>6. Monkey goby</h5>
+              <p>Neogobius Fluviatilis</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <hr>
+      <br>
+      <br>
+      <article id="contacts" class="contacts">
+        <h2>Contacts</h2>
+        <button class="toggle-btn">
+          <div class="click">Click here to see contacts</div>
+          <div class="toggle block">
+            <div>Email: <span>malazi140@gmail.com</span></div>
+            <div>Github: https://github.com/GiorgiiLazi</div>
+          </div>
+        </button>
+        
+      </article>
+      
 
        <section class="join">
         <h2>Join the club</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eum quia illo provident? Enim, nobis obcaecati! Similique ratione dolorem debitis quidem atque fuga commodi nemo, ut culpa incidunt, officiis impedit.</p>
+        <p>If you are interested in Kintrishi River content updates then please join us and don't forget that keeping local environments safe is our mutual responsibility</p>
+        <p>Consider subscribing to our web page or keep it in bookmarks</p>
         <form action="">
             <input type="email" name="email" id="" placeholder="name@email.com" required>
 
@@ -53,7 +190,10 @@
        </section>
 
        <footer>
-        <p class="copyright">Copyright 2022 Kintrishi club</p>
+        <p class="copyright">Copyright <span>&#169;</span> 2023</p>
        </footer>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="app.js"></script>
     </body>
 </html>
